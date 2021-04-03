@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './video_item.module.css'
 
-const VideoItem = (props) => { 
+const VideoItem = memo(
+  (props) => { 
     
     const handleSelectVideo = () => {
       props.onSelect(props.video);
@@ -25,5 +26,6 @@ const VideoItem = (props) => {
       </li>
     )
 }
+)
 
 export default VideoItem;

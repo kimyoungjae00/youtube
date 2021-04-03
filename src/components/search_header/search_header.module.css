@@ -4,11 +4,12 @@
   height: 4rem;
   padding: 0.5rem 1rem;
   background: black;
-  color: white;
 }
 
 .logo {
   display: flex;
+  text-decoration: none;
+  color: white;
   align-items: center;
   margin-right: 0.5em;
 }
