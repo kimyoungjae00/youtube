@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import styles from './app.module.css';
 import SearchHeader from './components/search_header/search_header';
+import Aside from './components/aside/aside';
 import VideoDetail from './components/video_detail/video_detail';
 import VideoList from './components/video_list/video_list';
 
@@ -31,20 +32,23 @@ function App({youtube}) { //필요한 dependency를 외부로부터 받아와야
   return (
     <div className={styles.app}>
       <SearchHeader onSearch={handleSearch}/>
-      <section className={styles.content}>
-        {selectedVideo && (
-          <div className={styles.detail}>
-            <VideoDetail video={selectedVideo} />
+      <div className={styles.body}>
+        <Aside/>
+        <section className={styles.content}>
+          {selectedVideo && (
+            <div className={styles.detail}>
+              <VideoDetail video={selectedVideo} />
+            </div>
+          )}
+          <div className={styles.list}>
+            <VideoList 
+              videos={videos} 
+              onSelect={selectVideo}
+              display={selectedVideo ? 'list' : 'grid'}
+            />
           </div>
-        )}
-        <div className={styles.list}>
-          <VideoList 
-            videos={videos} 
-            onSelect={selectVideo}
-            display={selectedVideo ? 'list' : 'grid'}
-          />
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

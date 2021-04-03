@@ -1,0 +1,28 @@
+aside {
+  width: 80rem;
+  background-color: black;
+}
+.aside_wrap {
+  position: sticky;
+  padding: 0;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.aside_menus {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(178, 178, 178, 1);
+  margin: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.aside_menus:hover {
+  transform: scale(1.1);
+  color: #ff0000;
+}
+
+.aside_wrap li svg {
+  margin-right: 0.5em;
+}
