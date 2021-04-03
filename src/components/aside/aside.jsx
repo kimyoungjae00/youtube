@@ -6,7 +6,7 @@ const Aside = (props) => {
     <aside>
       <ul className={styles.aside_wrap}>
         <li className={styles.aside_menus}>
-          <i className="far fa-heart"></i>
+          <i className="fas fa-user-alt"></i>
           My
         </li>
         <li className={styles.aside_menus}>
@@ -14,12 +14,12 @@ const Aside = (props) => {
           구독
         </li>
         <li className={styles.aside_menus}>
-          <i className="far fa-hand-pointer"></i>
+          <i className="fas fa-box-open"></i>
           보관함  
         </li>
         <li className={styles.aside_menus}>
-          <i className="far fa-hand-pointer"></i>
-          기록
+          <i className="far fa-clock"></i>
+          시청 기록
         </li>
         <li className={styles.aside_menus}>
           <i className="far fa-sun"></i>

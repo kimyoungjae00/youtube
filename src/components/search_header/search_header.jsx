@@ -24,6 +24,14 @@ const SearchHeader = memo(
             <img className={styles.buttonImg} src="/images/search.png" alt="search" />
           </button>
         </form>
+        <div className={styles.aside_wrap}>
+          <span className={styles.aside_menus}>
+            <i className="fas fa-user-alt"></i>
+          </span>
+          <span className={styles.aside_menus}>
+            <i className="far fa-sun"></i>
+          </span>
+        </div> 
       </header>
     )
   });

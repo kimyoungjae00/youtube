@@ -40,3 +40,27 @@
   height: 100%;
   padding: 0.5em 0.2em;
 }
+
+.aside_wrap {
+  transform: translateY(25%);
+}
+.aside_menus {
+  color: rgba(178, 178, 178, 1);
+  margin: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.aside_menus:hover {
+  transform: scale(1.1);
+  color: #ff0000;
+}
+
+.aside_wrap li svg {
+  margin-right: 0.5em;
+}
+
+@media all and (max-width: 48rem) {
+  .title {
+    display: none;
+  }
+}

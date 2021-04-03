@@ -1,8 +1,8 @@
 aside {
-  width: 80rem;
   background-color: black;
 }
 .aside_wrap {
+  width: 8rem;
   position: sticky;
   padding: 0;
   top: 4rem;
@@ -10,7 +10,6 @@ aside {
   flex-direction: column;
 }
 .aside_menus {
-  position: relative;
   display: flex;
   align-items: center;
   color: rgba(178, 178, 178, 1);
@@ -25,4 +24,10 @@ aside {
 
 .aside_wrap li svg {
   margin-right: 0.5em;
+}
+
+@media all and (max-width: 48rem) {
+  aside {
+    display: none;
+  }
 }
